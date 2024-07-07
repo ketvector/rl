@@ -9,3 +9,5 @@ Implementations:
 
   Results from the trained vpg model:
   [rl-demo.webm](https://github.com/ketvector/rl/assets/22502617/3f87d45a-584f-4ec5-bb74-a8f91e21d641)
+
+  Before: <img src="./results/vpg/untrained_rewards.png"
