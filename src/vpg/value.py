@@ -2,10 +2,9 @@ import torch
 
 # approximator for value function to use as baseline reward    
 class BaselineValue(torch.nn.Module):
-    # TODO: take model input/output at model creation
-    def __init__(self):
+    def __init__(self, input_dim = 4, hidden_dim = 20):
         super(BaselineValue, self).__init__()
-        self.model = torch.nn.Sequential(torch.nn.Linear(4, 20), torch.nn.ReLU(), torch.nn.Linear(20,1), torch.nn.ReLU())
+        self.model = torch.nn.Sequential(torch.nn.Linear(input_dim, hidden_dim), torch.nn.ReLU(), torch.nn.Linear(hidden_dim,1), torch.nn.ReLU())
     
     def forward(self, observation):
         observation_tensor = torch.tensor(observation)
