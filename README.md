@@ -2,6 +2,7 @@ This repository hosts my (ongoing) implementations of RL algorithms.
 I am using 
 - [gymnasium](https://gymnasium.farama.org/) for the environments. 
 - pytorch for implementing the algorithm.
+-------------------------------------------------------
 
 Implementations:
 
@@ -10,5 +11,5 @@ Implementations:
   Results from the trained vpg model:
   [rl-demo.webm](https://github.com/ketvector/rl/assets/22502617/3f87d45a-584f-4ec5-bb74-a8f91e21d641)
 
-   Avearage reward before training = 9.5 / 500
+   Avearage reward before training = 9.5 / 500 <br>
    Avearage reward after training = 499.3 / 500
